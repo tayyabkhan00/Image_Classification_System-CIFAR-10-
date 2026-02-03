@@ -93,4 +93,24 @@ Residual connections allow deeper networks to train efficiently by learning iden
 ---
 
 ## 📂 Project Structure
+```
+CNN_PROJECT/
+│
+├── deployment/           # Streamlit deployment
+│ ├── app.py              # Main Streamlit app
+│ ├── model.py            # ResNet-18 architecture
+│ ├── resnet_cifar10.pth  # Trained model weights
+│ └── requirements.txt
+│
+├── model/                # Training & experiments
+│ ├── cnn_72.py
+│ ├── cnn_84.py
+│ └── resnet_18.py
+│
+├── data/                 # Dataset (ignored via .gitignore)
+│
+├── test_images.py        # Utility script
+├── .gitignore
+└── README.md
+```
 
