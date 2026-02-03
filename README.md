@@ -163,6 +163,35 @@ The model weights (.pth) are loaded directly from the repository.
 
 ---
 
+## 🖥️ Training Environment & Compute Considerations
+
+Training a deep architecture like **ResNet-18 on CIFAR-10** is computationally expensive.
+
+### ⚠️ Important Note on Training Time
+- Training the model **on CPU only** can take **8–10+ hours** depending on hardware.
+- Due to this limitation, training on a local CPU is **not recommended**.
+
+### ✅ Recommended: Google Colab (GPU)
+To efficiently train the model and generate the `resnet_cifar10.pth` file, **Google Colab with GPU acceleration** was used.
+
+**Benefits of using Colab:**
+- Free GPU access (Tesla T4 / P100)
+- Training completes in **~30–45 minutes**
+- Faster experimentation and debugging
+- Ideal for deep CNN architectures like ResNet
+
+### 🔄 Workflow Used in This Project
+1. Train ResNet-18 on **Google Colab (GPU)**
+2. Save trained weights as `resnet_cifar10.pth`
+3. Download the `.pth` file
+4. Use the trained weights for:
+   - Local inference
+   - Streamlit Cloud deployment
+
+This approach ensures **efficient training** while keeping deployment lightweight and reproducible.
+
+---
+
 ## 📈 Evaluation Metrics
 
 - Overall Test Accuracy
