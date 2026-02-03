@@ -96,21 +96,112 @@ Residual connections allow deeper networks to train efficiently by learning iden
 ```
 CNN_PROJECT/
 │
-├── deployment/           # Streamlit deployment
-│ ├── app.py              # Main Streamlit app
-│ ├── model.py            # ResNet-18 architecture
-│ ├── resnet_cifar10.pth  # Trained model weights
+├── deployment/               # Streamlit deployment
+│ ├── app.py                  # Main Streamlit app
+│ ├── model.py                # ResNet-18 architecture
+│ ├── resnet_cifar10.pth      # Trained model weights
 │ └── requirements.txt
 │
-├── model/                # Training & experiments
+├── model/                    # Training & experiments
 │ ├── cnn_72.py
 │ ├── cnn_84.py
 │ └── resnet_18.py
 │
-├── data/                 # Dataset (ignored via .gitignore)
+├── data/                      # Dataset (ignored via .gitignore)
 │
-├── test_images.py        # Utility script
+├── test_images.py             # Utility script
 ├── .gitignore
 └── README.md
 ```
 
+---
+
+## ⚙️ Installation & Local Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd CNN_PROJECT
+```
+### 2️⃣ Create Virtual Environment (Optional)
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate      # Windows
+```
+### 3️⃣ Install Dependencies
+```bash
+pip install -r deployment/requirements.txt
+```
+### 4️⃣ Run the Streamlit App
+```bash
+streamlit run deployment/app.py
+```
+### ☁️ Deployment (Streamlit Cloud)
+
+- Platform: Streamlit Cloud
+- App file path:
+```bash
+deployment/app.py
+```
+- Requirements file:
+```bash
+deployment/requirements.txt
+```
+The model weights (.pth) are loaded directly from the repository.
+
+---
+
+## 🧪 Training Summary
+
+- Epochs: 30
+- Batch Size: 128
+- Data Augmentation:
+   - Random Crop
+   - Horizontal Flip
+- Normalization: Mean = 0.5, Std = 0.5
+
+---
+
+## 📈 Evaluation Metrics
+
+- Overall Test Accuracy
+- Class-wise Accuracy
+- Softmax Confidence Scores
+ 
+---
+
+## 💡 What This Project Demonstrates
+
+- ✅ Deep Learning fundamentals
+- ✅ CNN & ResNet architecture understanding
+- ✅ PyTorch training pipeline
+- ✅ Model optimization techniques
+- ✅ Deployment using Streamlit
+- ✅ Clean UI/UX for ML applications
+- ✅ Proper Git & GitHub practices
+This project is suitable for:
+- Data Science portfolios
+- Deep Learning internships
+- ML / AI Engineer roles
+
+---
+
+## 🚀 Future Improvements
+
+- Grad-CAM heatmap visualization
+- Model comparison (VGG vs ResNet)
+- Faster inference optimizations
+- Mobile-friendly UI
+- Cloud storage for model artifacts
+
+---
+
+## 👨‍💻 Author
+
+Tayyab Khan<br>
+B.Tech – AI & Data Science
+
+**⭐ Support**
+
+If you like this project, consider giving it a ⭐ on GitHub!
