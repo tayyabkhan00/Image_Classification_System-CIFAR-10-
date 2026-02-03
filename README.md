@@ -8,7 +8,7 @@ This project demonstrates an **end-to-end Deep Learning workflow** — from mode
 
 ## 🚀 Live Demo
 👉 **Streamlit App:**  
-*(Add your Streamlit Cloud URL here after deployment)*
+*(https://aqcdjkxheveuvl3sjidcvt.streamlit.app/)*
 
 ---
 
@@ -180,6 +180,7 @@ The model weights (.pth) are loaded directly from the repository.
 - ✅ Deployment using Streamlit
 - ✅ Clean UI/UX for ML applications
 - ✅ Proper Git & GitHub practices
+
 This project is suitable for:
 - Data Science portfolios
 - Deep Learning internships
